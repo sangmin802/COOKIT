@@ -1,5 +1,5 @@
 [
-    { "title" : "진행중", "id" : 1, "src" : "../img/event/event1.jpg", "date" : "2019.09.16 ~ 2019.09.30", "name" : "CJ ONE X 쿡킷 플레이팅 이벤트" },
-    { "title" : "진행중", "id" : 2, "src" : "../img/event/event2.png", "date" : "2019.06.24 ~ 2019.12.31", "name" : "첫 구매 & App다운로드 1만원 페이백" },
-    { "title" : "진행중", "id" : 3, "src" : "../img/event/event3.png", "date" : "2019.06.24 ~ 2019.11.30", "name" : "3번 살때마다 혜택! 쿡킷 스탬프" }
+    { "title" : "진행중", "id" : 1, "src" : "img/event/event1.jpg", "date" : "2019.09.16 ~ 2019.09.30", "name" : "CJ ONE X 쿡킷 플레이팅 이벤트" },
+    { "title" : "진행중", "id" : 2, "src" : "img/event/event2.png", "date" : "2019.06.24 ~ 2019.12.31", "name" : "첫 구매 & App다운로드 1만원 페이백" },
+    { "title" : "진행중", "id" : 3, "src" : "img/event/event3.png", "date" : "2019.06.24 ~ 2019.11.30", "name" : "3번 살때마다 혜택! 쿡킷 스탬프" }
 ]

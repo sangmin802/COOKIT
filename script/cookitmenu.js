@@ -21,7 +21,7 @@ $(document).ready(function(){
     
     // 함수를 사용할 때, 내가 한 것 처럼 function ??? (여기에) 기존에 선언된 key를 똑같이 해주면, 여러곳에서 사용할 수 없고 단지 그 순간에만 사용하는 함수(일회용적인)가 되버린다.
     $.ajax({
-        url : '../json/items.json',
+        url : 'https://raw.githubusercontent.com/sangmin802/COOKIT/master/json/items.json',
         method : 'GET',
         dataType : 'json'
     }).done(function(data){

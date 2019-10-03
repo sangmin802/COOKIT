@@ -29,7 +29,7 @@ $(document).ready(function(){
     }
 
     $.ajax({
-        url : '../json/items.json',
+        url : 'https://raw.githubusercontent.com/sangmin802/COOKIT/master/json/items.json',
         method : 'GET',
         dataType : 'json'
     }).done(function(data){

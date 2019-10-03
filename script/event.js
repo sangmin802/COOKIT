@@ -5,7 +5,7 @@ $(document).ready(function(){
     var txt = '';
 
     $.ajax({
-        url : '../json/event.json',
+        url : 'https://raw.githubusercontent.com/sangmin802/COOKIT/master/json/event.json',
         method : 'GET',
         dataType : 'json'
     }).done(function(data){
