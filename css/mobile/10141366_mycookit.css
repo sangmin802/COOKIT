@@ -1,0 +1,8 @@
+@media screen and (min-width : 1024px) and (max-width : 1366px){
+    .section_wrap {max-width : 1366px; min-width : 1024px;}
+    .section1 {width : 884px;}
+    .login_wrap {width : 100%;}
+    .id, .pw {font-size : 20px;}
+    .cj_member_check {line-height : 40px;}
+    .member_ing {width : 300px; line-height : 40px;}
+}

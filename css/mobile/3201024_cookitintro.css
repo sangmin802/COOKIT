@@ -1,0 +1,81 @@
+@media screen and (min-width : 0) and (max-width : 1023px){
+    #intro_wrap {min-width : 320px;}
+    .intro_mainimg_wrap {display : none;}
+    .intro_mainimg_wrap_mobile {display : block; width : 100%; background : url('../../img/mobile/menu1/bg_craft_pattern.png'); overflow : hidden; position : relative;}
+    .intro_mainimg_mobile, .top_bg_height {display : block; width : 100%;}
+    .intro_mainimg_mobile > img {display : block; width : 100%;}
+    .mobile_bg_fixed {background : url('../../img/mobile/menu1/img_top_fix.png') no-repeat; background-size : contain; position : absolute; z-index : 2;}
+    .moving_m {position : absolute; z-index : 0; animation-duration : 1s; animation-iteration-count : 1; animation-timing-function : ease-in-out; animation-fill-mode : forwards;}
+    .salmon {top : 5%; animation-name : salmon_ani}
+    .seed {top : 50%; animation-name : seed_ani}
+    .moving_logo {top : 40%; left : 50%; margin-top : -44px; animation-name : moving_logo_ani; z-index : 1;}
+    .broc {top : 0; animation-name : broc_ani}
+    .matar {bottom : 0; animation-name : matar_ani}
+    @keyframes salmon_ani {
+        100% {top : 0%;}
+    }
+    @keyframes broc_ani {
+        100% {top : -5%;}
+    }
+    @keyframes seed_ani {
+        100% {top : 45%;}
+    }
+    @keyframes moving_logo_ani {
+        100% {top : 35%;}
+    }
+    @keyframes matar_ani {
+        100% {bottom : 5%;}
+    }
+    /* section1 */
+    .section1 {width : 100%; padding : 70px 20px;}
+    .section1 .intro_title {font-size : 28px;}
+    .section1 .intro_desc {font-size : 14px;}
+    /* section2 */
+    .section2 {min-width : 100%; padding : 0 20px; background : black;}
+    .section2_img {width : 100%; min-width : 320px; transform : scale(1); opacity : 0.5;}
+    .section2_img .section2_img_pc {display : none;}
+    .section2_img .section2_img_mobile {display : block; width : 100%; height : 100%;}
+    .section2_textbox {width : 100%; padding-left : 0; margin-top : 0;}
+    .section2 .intro_title {font-size : 28px;}
+    .section2 .intro_desc {font-size : 14px;}
+    .section2_value_wrap {margin-top : 20px;}
+    .section2_value {width : 100%; height : auto; margin-right : 0; padding-top : 0; margin-bottom : 10px; float : none; overflow : hidden;padding : 10px 0px 10px 10px;}
+    .section2_value > div {width : auto; font-size : 13px; float : left;}
+    .section2_value .section2_value_text1, .section2_value .section2_value_text2,.section2_value .section2_value_text3 {margin : 10px 0; float : none; text-align : left; padding-left : 70px;}
+    /* section3 */
+    .section3 {width : 100%; padding : 120px 20px 0;}
+    .section3 .intro_title {font-size : 28px; letter-spacing : -4px;}
+    .section3 .intro_desc {font-size : 14px;}
+    .section3_img_wrap {position : inherit; width : 100%;}
+    .section3_img_pc {display : none;}
+    .section3_img_mobile {display : block; width : 100%;}
+    /* section4 */
+    .section4 {width : 100%; padding : 120px 20px 0;}
+    .section4 .intro_title {font-size : 28px; letter-spacing : -4px;}
+    .section4 .intro_desc {font-size : 14px;}
+    .section4_video_wrap {position : relative; width : 100%; height : 640px; overflow : hidden;}
+    .section4_video_wrap video {position : absolute; left : 50%; margin-left : -810px;}
+    /* section5 */
+    .section5 {padding : 120px 20px 0;}
+    .section5_text {padding-left : 0; width : 100%;}
+    .section5 .intro_title {font-size : 28px; letter-spacing : -3px;}
+    .section5 .intro_desc {font-size : 14px;}
+    /* section6 */
+    .section6 {width : 100%; position : relative; padding : 120px 20px 0;
+    }
+    .section6 .intro_title {font-size : 28px; letter-spacing : -2px;}
+    .section6 .intro_desc {font-size : 14px;}
+    .section6_img_wrap {width : 100%; position : inherit; height : auto;}
+    .section6_img_wrap .section6_img_pc {display : none;}
+    .section6_img_wrap .section6_img_mobile {display : block; width : 100%;}
+    /* section7 */
+    .section7_wrap {width : 100%;}
+    .section7_moving_title {margin-left : 0; z-index : 1; color : white; position : absolute; text-align : left; left : 50%;}
+    .section7_moving_title_bottom {font-size : 28px;}
+    .sectoin7_main_img {width : 100%; margin-left : 0;}
+    .section7_img_pc {display : none;}
+    .section7_img_mobile {display : block; width : 100%;}
+    .section7_text {width : 100%; margin-left : 0; padding : 0 20px; margin-top : 0;}
+    .section7 .section7_text_title {font-size : 18px;}
+    .section7 .section7_text_desc {font-size : 14px;}
+}

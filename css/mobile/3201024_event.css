@@ -1,0 +1,13 @@
+@media screen and (min-width : 0) and (max-width : 1023px){
+    .section_wrap {max-width : 1023px; min-width : 320px; padding : 0 20px;}
+    .section1 {width : 100%;}
+    .section1_title {font-size : 28px;}
+    .section1_subtitle_wrap > span {font-size : 20px;}
+    .event_item {width : calc((100% - 10px) / 2 - 0.01px); margin-right : 10px; margin-bottom : 25px;}
+    .event_item:nth-child(2n) {margin-right : 0;}
+    .event_item:nth-child(3n) {margin-right : 10px;}
+
+    .event_item_img {height : auto;}
+    .event_desc {margin : 5px 0;}
+    .event_tag, .event_date, .event_name  {font-size : 14px;}
+}

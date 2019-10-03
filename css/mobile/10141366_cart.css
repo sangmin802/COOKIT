@@ -1,0 +1,19 @@
+@media screen and (min-width : 1024px) and (max-width : 1366px){
+    .cart_inform {width : 884px;}
+    .cart_2 {text-align : center;}
+    .cart_2_text {float : inherit; letter-spacing : -1px;}
+    .cart_login {float : inherit; margin : 0 auto; margin-top : 20px;}
+    .cart_date_item_img {width : 200px; height : 200px;}
+    .cart_date_item_desc {width : 270px;}
+    .cart_date_item_name, .cart_date_item_price {letter-spacing : -1px;}
+    .cart_date_item_name {padding-top : 60px;}
+    .cart_date_item_count {margin-top : 75px;}
+    .cart_date_item_minus, .cart_date_item_plus {width : 50px; height : 50px; background-size : 1600px 1600px;}
+    .cart_date_item_minus {background-position : -535px -82px;}
+    .cart_date_item_plus {background-position : -600px -82px;}
+    .cart_date_item_ea {line-height : 50px;}
+    .cart_date_item_totalprice {margin-left : 20px; margin-top : 87px;}
+    .cart_date_item_remove {margin-left : 10px; width : 26px; height : 26px; margin-top : 90px;}
+    .cart_3_final > div:nth-last-child(1) {clear : both; float : inherit; width : 100%; padding-top : 60px;}
+    .cart_3_final {height : 300px;}
+}

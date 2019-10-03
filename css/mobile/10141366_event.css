@@ -1,0 +1,9 @@
+@media screen and (min-width : 1024px) and (max-width : 1366px){
+    .section_wrap {max-width : 1366px; min-width : 1024px;}
+    .section1 {width : 884px;}
+    .section1_content_wrap {margin-top : 0;}
+    .event_item {width : calc((100% - 20px)/2 - 0.01px); margin-top : 50px;}
+    .event_item:nth-child(3n) {margin-right : 20px;}
+    .event_item:nth-child(2n) {margin-right : 0px;}
+    .event_item_img {height : auto;}
+}

@@ -1,0 +1,69 @@
+@media screen and (min-width : 1024px) and (max-width : 1366px){
+    /* main_slide */
+    .swiper-slide {overflow : hidden;}
+    .main_slide_wrap {max-width : 1366px; min-width : 1024px;}
+    .slide_text, .button_pagination {margin-left : -512px; padding-left : 40px;}
+    .video_btn {margin-left : 440px;}
+    .main_slide_link {width : 500px;}
+    .main_slide_img, .main_slide_video {left : 50%; margin-left : -860px;}
+    /* nav */
+    nav {max-width : 1366px; min-width : 1024px; margin : 30px 0; height : auto;}
+    .nav_wrap {width : 884px; padding : 0; margin : 0 auto; overflow : inherit;}
+    .nav_wrap > div {width : 100%; padding : 24px 108px 10px 16px; float :inherit; margin-bottom : 20px;}
+    .add_text:after, .deliverdate_text:after {width : 80px; height : 72px; background-size : 700px 700px;}
+    .add_text:after {background-position : -420px -180px;}
+    .deliverdate_text:after {background-position : -530px -180px;}
+    .add_text p:nth-child(2), .deliverdate_text p:nth-child(2) {padding : 4px 0 4px;}
+    /* section1 */
+    .section1 {max-width : 1366px; min-width : 1024px; margin-top : 20px;}
+    .section1_wrap {width : 884px;}
+    .taste_recommend {width : 200px; padding-top : 70px;}
+    .taste {width : 100%;}
+    .taste_recommend:after {margin-left : 100px}
+    .taste_food {min-width : 684px; left : 200px;}
+    .taste_food_item {width : 684px;}
+    .taste_food_item .img {width : 418px; padding-top : 51px;}
+    .taste_food_item .img img {vertical-align: middle;}
+    .taste_food_item:nth-of-type(1) { left : -684px; }
+    .taste_food_item:nth-of-type(2) { left : 0; }
+    .taste_food_item:nth-of-type(3) { left : 684px; }
+    .taste_food_item:nth-of-type(4) { left : 1386px; }
+    .taste_food_item:nth-of-type(5) { left : 2052px; }
+    /* section2 */
+    .section2_swiper {max-width : 1366px; min-width : 1024px; height : 200px;}
+    .img_ab {width : 1366px; margin-left : -663px;}
+    .section2_slide img {width : 100%;}
+    .section2_btnbar {margin-left : 70px;}
+    /* section3 */
+    .section3 {max-width : 1366px; min-width : 1024px; margin : 70px auto;}
+    .section3_wrap {width : 884px; height : 884px;}
+    .best_item {width : calc((100% - (41px * 1)) / 2 - 0.01px);height : 520px;}
+    .best_item:nth-child(3n) { margin-right : 41px;}
+    .best_item:nth-child(2n) { margin-right : 0;}
+    .best_number .best1 {font-size : 24px;}
+    .best_number {width : 80px; height : 80px; line-height : 80px; font-size : 28px;}
+    .best_item:nth-child(1) .best_number {width : 80px; height : 80px; padding-top :16px;}
+    .best_item_banner span {font-size : 24px; width : 100px; height : 30px;line-height : 30px;}
+    .best_item_name, .best_item_price {font-size : 24px;}
+    .best_item_people {font-size : 20px;}
+    /* section4 */
+    .section4 {max-width : 1366px; min-width : 1024px; margin-bottom : 70px;}
+    .section4_wrap {width : 884px;}
+    .veiw_all {font-size : 24px;}
+    .section4_wrap_left {width : 380px;}
+    .live_review_innerwrap {width : 100%; height : 300px;}
+    .review_opinion {height : auto; letter-spacing : -3px;}
+    /* section5 */
+    .section5 {max-width : 1366px; min-width : 1024px;}
+    .section5_wrap {width : 884px;}
+    .all_menu, .hot_deal {width : 100%;}
+    .hot_deal {margin-top : 70px;}
+    .section5_tit_img {height : auto;}
+    .section5_title, .section5_desc {text-align : center;}
+    .section5_tablecell > div {float : left; margin-right : 10px;}
+    .section5_banner {margin-bottom : 0px;}
+    .section5_item_pricepeople {margin-top : 0px;}
+    .new_tag, .deliver_tag {font-size : 24px;}
+    .cj_cookit_img {height : auto;}
+    .cj_cookit_title, .cj_cookit_desc {text-align : center;}
+}

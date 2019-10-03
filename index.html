@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/headernfooter.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shareclass.css">
+    <link rel="stylesheet" href="css/mobile/10141366_headernfooter.css">
+    <link rel="stylesheet" href="css/mobile/10141366_index.css">
+    <link rel="stylesheet" href="css/mobile/3201024_headernfooter.css">
+    <link rel="stylesheet" href="css/mobile/3201024_index.css">
+    <script src="script/index.js"></script>
+    <script src="script/headerbottom.js"></script>
+    <link rel="shortcut icon" href="//www.cjcookit.com/cjkit/web/images/favicon.ico">
+    <title>COOKIT</title>
+</head>
+<body>
+    <!-- body태그는 기본적으로 자식의 높이가 길어지면 스크롤을 만든다.
+        id로 내용을 감싸주지 않으면, 반응형에서 body태그 자체에는 overflow hidden이 적용되지 않기 때문에 html, body 이런식으로 줘야 하는데, 이러면 pc에서는 화면을 줄였을 때, 스크롤바가 두개가 생긴다.
+        (모바일용 메뉴를 display : none이 아닌 화면 밖에서 들어오는 animation을 주었기 때문 또한 반응형에서는 하단 메뉴 fixed가 화면 밖 메뉴의 너비까지 갖고와서 레이아웃이 깨진다)
+
+        그렇기 때문에 모든 내용물을 감싸는 부모를 body태그 안에 넣고, overflow-x : hidden을 먹여주면 모든 스크롤이 사라지지만, body태그 자체의 자식 높이에 따른 스크롤은 남기 때문에, pc상에서도 정상적으로 보여진다
+
+        문제의 발단1. 반응형에서 body태그 자체에 overflow css가 적용안되어서, fixed가 position left 100%인 메뉴태그의 너비까지 갖고와버림
+        해결방안
+        1) body 태그 안에 모든 내용물을 감싸는 태그를 만들고, 거기에다 overflow-x : hidden을 적용시킴
+    -->
+    <div id="body">
+        <div class="header_mobile">
+            <div class="header_mobile_normal">
+                <div class="m_logo"></div>
+                <div class="m_cartnhamberger">
+                    <div class="m_cart">
+                        <span class="cart_number">0</span>
+                    </div>
+                    <div class="m_hamburger"></div>
+                </div>
+            </div>
+            <div class="header_mobile_popup">
+                <div class="header_mobile_section1">
+                    <div class="header_mobile_section1_top">
+                        <div class="header_mobile_login ">
+                            로그인해주세요.
+                        </div>
+                        <div class="header_mobile_sectoin1_home_remove">
+                            <div class="header_mobile_section1_home"></div>
+                            <div class="header_mobile_section1_remove"></div>
+                        </div>
+                    </div>
+                    <div class="header_mobile_section1_bottom">
+                        <div class="header_mobile_section1_sub">
+                            <div class="header_mobile_mycookit ">MY쿡킷</div>
+                            <div class="header_mobile_order ">주문/배송</div>
+                            <div class="header_mobile_findmenu ">메뉴 찾기</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_mobile_section2 header_mobile_section">
+                    <div class="header_mobile_section3_deliver arrive "></div>
+                    <div class="header_mobile_section3_timer ">남은시간<span class="etc_time"></span></div>
+                </div>
+                <div class="header_mobile_section3 header_mobile_section">
+                    <ul class="header_mobile_section4_ul">
+                        <li class="m_pop_menu">
+                            COOKIT 메뉴<br>
+                            <div class="m_li1_sub ">
+                                오늘 뭐먹지? 고민없도록!<br>
+                                쿡킷이 신선한 재료의 맛있는 요리를 준비합니다.
+                            </div>
+                        </li>
+                        <li class="m_pop_review">리뷰</li>
+                        <li class="m_pop_intro">COOKIT 소개</li>
+                        <li class="">새벽배송/이용안내</li>
+                        <li class="m_pop_event">이벤트</li>
+                        <li class="">고객행복센터</li>
+                    </ul>
+                </div>
+                <div class="header_mobile_section4 header_mobile_section">
+                    <div class="header_mobile_section5_top ">
+                        <strong class="">고객행복센터 1688-1920</strong><br>
+                        평일 8:00 ~ 17:00 / 토요일 8:00 ~ 12:00<br>
+                        (점심시간 12:00 ~ 13:00, 일요일 / 공휴일 휴무)
+                    </div>
+                    <div class="header_mobile_section5_bottom">
+                        로그인
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="header_mobile_menu">
+            <li>
+                <div class="m_list_wrap">
+                    <div class="m_list_name m_home">홈</div>
+                </div>
+            </li>
+            <li>
+                <div class="m_list_wrap">
+                    <div class="m_list_name m_menu">메뉴</div>
+                </div>
+            </li>
+            <li>
+                <div class="m_list_wrap">
+                    <div class="m_list_name m_review">리뷰</div>
+                </div>
+            </li>
+            <li>
+                <div class="m_list_wrap">
+                    <div class="m_list_name m_my">마이</div>
+                </div>
+            </li>
+            <li>
+                <div class="m_list_wrap">
+                    <div class="m_list_name m_chat">챗봇</div>
+                </div>
+            </li>
+        </ul>
+        <header>
+            <div class="header_top_wrap">
+                <div class="header_top">
+                    <ul class="header_top_ul">
+                        <li>회원가입</li>
+                        <li>로그인</li>
+                        <li>고객행복센터</li>
+                        <li>배송지역검색</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_bottom_wrap">
+                <div class="header_bottom">
+                    <div class="header_bottom_logo">
+                    </div>
+                    <ul class="header_bottom_ul_1">
+                        <li class="menu_introduce">COOKIT 소개</li>
+                        <li class="menu_cookitmenu">COOKIT 메뉴</li>
+                        <li class="menu_review">리뷰</li>
+                        <li class="menu_event">이벤트</li>
+                        <li class="menu_mycookit">MY쿡킷</li>
+                    </ul>
+                    <ul class="header_bottom_ul_2">
+                        <li class="cart">
+                            <span class="cart_number">
+                                0
+                            </span>
+                            <div class="cart_text">
+                                장바구니
+                            </div>
+                        </li>
+                        <li class="find_menu">
+                            <div class="find_menu_text">
+                                메뉴찾기
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="swiper_wrap">
+            <div class="main_slide_wrap">
+                <div class="swiper-container main_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1 main_swiper_slide">
+                            <input type="hidden" value="1">
+                            <div class="video_btn"></div>
+                            <div class="main_slide_video">
+                                <video loop muted title playsinline poster="img/main_slide/video1_poster.jpg">
+                                    <source src="img/main_slide/main_slide_video1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="main_slide_img">
+                                <img src="img/main_slide/main_slide1.jpg" alt="가을 대표 메뉴 맑은 민어" class="pc_main_img">
+                                <img src="img/mobile/main_slide2.jpg" alt="가을 대표 메뉴 맑은 민어" class="mobile_main_img">
+                            </div>
+                            <div class="slide_text">
+                                <div class="newdeliver">
+                                    <div class="slide_new">NEW</div>
+                                </div>
+                                <div class="slide_date">
+                                    <u>9/05 신메뉴 출시</u>
+                                </div>
+                                <div class="slide_name">
+                                    가을 대표 메뉴<br>맑은 민어탕
+                                </div>
+                                <div class="people_cooktime">
+                                    <div class="people">
+                                        3인분
+                                    </div>
+                                    <div class="cooktime">
+                                        조리 30분
+                                    </div>
+                                </div>
+                                <div class="slide_price">
+                                    <b>29,800원</b>
+                                </div>
+                            </div>
+                            <div class="main_slide_link"></div>
+                        </div>
+                        <div class="swiper-slide slide2 main_swiper_slide">
+                            <input type="hidden" value="16">
+                            <div class="video_btn"></div>
+                            <div class="main_slide_video">
+                                <video loop muted title playsinline poster="img/main_slide/video2_poster.jpg">
+                                    <source src="img/main_slide/main_slide_video2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="main_slide_img">
+                                <img src="img/main_slide/main_slide2.jpg" alt="담백시원 소고기맑은탕국" class="pc_main_img">
+                                <img src="img/mobile/main_slide1.jpg" alt="담백시원 소고기맑은탕국" class="mobile_main_img">
+                            </div>
+                            <div class="slide_text fontwhiteparent">
+                                <div class="newdeliver">
+                                </div>
+                                <div class="slide_date">
+                                    <u>9/02 신메뉴 출시</u>
+                                </div>
+                                <div class="slide_name">
+                                    담백시원<br>소고기맑은탕국
+                                </div>
+                                <div class="people_cooktime">
+                                    <div class="people people2">
+                                        3인분
+                                    </div>
+                                    <div class="cooktime cooktime2">
+                                        조리 30분
+                                    </div>
+                                </div>
+                                <div class="slide_price">
+                                    <b>17,800원</b>
+                                </div>
+                            </div>
+                            <div class="main_slide_link"></div>
+                        </div>
+                        <div class="swiper-slide slide3 main_swiper_slide">
+                            <input type="hidden" value="12">
+                            <div class="video_btn"></div>
+                            <div class="main_slide_video">
+                                <video loop muted title playsinline poster="img/main_slide/video3_poster.jpg">
+                                    <source src="img/main_slide/main_slide_video3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="main_slide_img">
+                                <img src="img/main_slide/main_slide3.jpg" alt="찰떡궁합 떡갈비와 더덕구이" class="pc_main_img">
+                                <img src="img/mobile/main_slide4.jpg" alt="찰떡궁합 떡갈비와 더덕구이" class="mobile_main_img">
+                            </div>
+                            <div class="slide_text fontwhiteparent">
+                                <div class="newdeliver">
+                                </div>
+                                <div class="slide_date">
+                                    <u>8/29 신메뉴 출시</u>
+                                </div>
+                                <div class="slide_name">
+                                    찰떡궁합<br>떡갈비와 더덕구이
+                                </div>
+                                <div class="people_cooktime">
+                                    <div class="people people2">
+                                        3인분
+                                    </div>
+                                    <div class="cooktime cooktime2">
+                                        조리 25분
+                                    </div>
+                                </div>
+                                <div class="slide_price">
+                                    <b>25,800원</b>
+                                </div>
+                            </div>
+                            <div class="main_slide_link"></div>
+                        </div>
+                        <div class="swiper-slide slide4 main_swiper_slide">
+                            <input type="hidden" value="11">
+                            <div class="video_btn"></div>
+                            <div class="main_slide_video">
+                                <video loop muted title playsinline poster="img/main_slide/video4_poster.jpg">
+                                    <source src="img/main_slide/main_slide_video4.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="main_slide_img">
+                                <img src="img/main_slide/main_slide4.jpg" alt="네 가지 버섯이 듬뿍 버섯소불고기" class="pc_main_img">
+                                <img src="img/mobile/main_slide3.jpg" alt="네 가지 버섯이 듬뿍 버섯소불고기" class="mobile_main_img">
+                            </div>
+                            <div class="slide_text">
+                                <div class="newdeliver">
+                                </div>
+                                <div class="slide_date">
+                                    <u>8/26 신메뉴 출시</u>
+                                </div>
+                                <div class="slide_name">
+                                    네 가지 버섯이 듬뿍<br>버섯소불고기
+                                </div>
+                                <div class="people_cooktime">
+                                    <div class="people">
+                                        3인분
+                                    </div>
+                                    <div class="cooktime">
+                                        조리 10분
+                                    </div>
+                                </div>
+                                <div class="slide_price">
+                                    <b>23,800원</b>
+                                </div>
+                            </div>
+                            <div class="main_slide_link"></div>
+                        </div>
+                        <div class="swiper-slide slide5 main_swiper_slide">
+                            <input type="hidden" value="13">
+                            <div class="video_btn"></div>
+                            <div class="main_slide_video">
+                                <video loop muted title playsinline poster="img/main_slide/video5_poster.jpg">
+                                    <source src="img/main_slide/main_slide_video5.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="main_slide_img">
+                                <img src="img/main_slide/main_slide5.jpg" alt="여름철 보양식 평양식 어복쟁반" class="pc_main_img">
+                                <img src="img/mobile/main_slide5.jpg" alt="여름철 보양식 평양식 어복쟁반" class="mobile_main_img">
+                            </div>
+                            <div class="slide_text fontwhiteparent">
+                                <div class="newdeliver">
+                                </div>
+                                <div class="slide_date">
+                                    <u>7/11 신메뉴 출시</u>
+                                </div>
+                                <div class="slide_name">
+                                    여름철 보양식<br>평양식 어복쟁반
+                                </div>
+                                <div class="people_cooktime">
+                                    <div class="people people2">
+                                        3인분
+                                    </div>
+                                    <div class="cooktime cooktime2">
+                                        조리 30분
+                                    </div>
+                                </div>
+                                <div class="slide_price">
+                                    <b>33,800원</b>
+                                </div>
+                            </div>
+                            <div class="main_slide_link"></div>
+                        </div>
+                    </div>
+                    <div class="button_pagination">
+                        <div class="swiper-button-prev main_prev"></div>
+                        <div class="swiper-pagination main_pagination"></div>
+                        <div class="swiper-button-next main_next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav_wrap">
+                <div class="add">
+                    <div class="add_text">
+                        <p class="font24">우리집도 COOKIT 배송이 되나요?</p>
+                        <p class="font15">배송이 가능한지 알려드려요</p>
+                        <p class="font18">배송지 검색</p>
+                    </div>
+                </div>
+                <div class="deliverdate">
+                    <div class="deliverdate_text">
+                        <p class="arrive font24"></p>
+                        <p class="font15">오전 7시까지 주문하시면 다음날 배송됩니다.</p>
+                        <p class="etc_time"></p><span class="font13">남은시간</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="section1">
+            <div class="section1_wrap">
+                <div class="taste_recommend">
+                    <div class="taste">
+                        <p class="taste_visible"></p>
+                        <ul class="taste_list">
+                            <li>매콤한맛</li>
+                            <li>짭짤한맛</li>
+                            <li>담백한맛</li>
+                            <li>이국적인맛</li>
+                        </ul>
+                    </div>
+                    <div class="recommend_text">메뉴<br>추천드려요</div>
+                    <div class="login_recommend"><span class="taste_login">로그인</span>하시면 고객님의 구매내역과<br>
+                        맛취향에 따라 딱맞는 맛있는 메뉴를 추천<br>드려요</div>
+                    <div class="section1_slidenumber">
+                        <div class="taste_prev"></div>
+                        <div class="taste_number">
+                            <span class="taste_start">1</span>
+                            <span>/</span>
+                            <span class="taste_fin"></span>
+                        </div>
+                        <div class="taste_next"></div>
+                    </div>
+                    <div class="taste_food">
+                        <div class="gradient_bg0"></div>
+                        <div class="gradient_bg"></div>
+                        <div class="taste_food_item_wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="swiper-container section2_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide section2_slide">
+                        <div class="img_ab">
+                            <img src="img/section2/section2_1.jpg" alt="첫 구매 고객께 드리는 감사쿠폰 최대 만원 쿠폰" class="event_pc">
+                            <img src="img/mobile/event2.png" alt="첫 구매 고객께 드리는 감사쿠폰 최대 만원 쿠폰" class="event_mobile">
+                        </div>
+                    </div>
+                    <div class="swiper-slide section2_slide">
+                        <div class="img_ab">
+                            <img src="img/section2/section2_2.jpg" alt="EVENT 스탬프 찍고 할인혜택 받으세요! 쿡킷스탬프3X" class="event_pc">
+                            <img src="img/mobile/event1.jpg" alt="EVENT 스탬프 찍고 할인혜택 받으세요! 쿡킷스탬프3X" class="event_mobile">
+                        </div>
+                    </div>
+                </div>
+                <div class="section2_btnbar_wrap">
+                    <div class="section2_btnbar">
+                        <div class="swiper-button-prev section2_prev"></div>
+                        <div class="swiper-pagination section2_pagination"></div>
+                        <div class="swiper-button-next section2_next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="section3_wrap">
+                <p>실시간 베스트</p>
+                <div class="best_item_wrap">
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="section4_wrap">
+                <div class="section4_title_wrap">
+                    <div class="section4_title">생생한 리뷰</div>
+                    <div class="veiw_all">View All</div>
+                </div>
+                <div class="section4_wrap_left">
+                    <div class="live_review_wrap">
+                        <div class="ddaom"></div>
+                        <div class="live_review_innerwrap">
+                            <div class="review review5">
+                                <div class="review_name font20">*버섯소불고기</div>
+                                <div class="review_opinion font20">
+                                    버섯 반 고기 반 너무 건강한 조합<br>
+                                    맛있게 잘 먹었습니다
+                                </div>
+                                <div class="review_star"></div>
+                                <div class="review_id font16">by.sue****</div>
+                            </div>
+                            <div class="review review1 opacity1animation">
+                                <div class="review_name font20">*평양식 어복쟁반</div>
+                                <div class="review_opinion font20">
+                                    부모님이 더 좋아하시는 어복쟁반<br>
+                                    CJ쿡킷 덕에 맛도 챙기고<br>
+                                    음식물 쓰레기도 줄이고 굿
+                                </div>
+                                <div class="review_star"></div>
+                                <div class="review_id font16">by.ksy***</div>
+                            </div>
+                            <div class="review review2">
+                                <div class="review_name font20">*고추잡채와 꽃빵</div>
+                                <div class="review_opinion font20">
+                                    돼지고기와 야채 모두 아주 싱싱했고<br>
+                                    쿡킷 메뉴 중 간편하기로<br>
+                                    으뜸인 것 같아요. 맛있게 잘 먹었습니다
+                                </div>
+                                <div class="review_star"></div>
+                                <div class="review_id font16">by.my*********</div>
+                            </div>
+                            <div class="review review3">
+                                <div class="review_name font20">*감바스 알아히요</div>
+                                <div class="review_opinion font20">
+                                    와~ 진짜 이가격에 이 퀄리티라니~!!!!!<br>
+                                    요리도 쉽고 음식점보다 퀄리티가 예술<br>
+                                    감동의 눙물.. ㅠㅠㅠㅠㅠㅠ
+                                </div>
+                                <div class="review_star"></div>
+                                <div class="review_id font16">by.him****</div>
+                            </div>
+                            <div class="review review4">
+                                <div class="review_name font20">*소고기맑은탕국</div>
+                                <div class="review_opinion font20">
+                                    이거 이거 진짜 맛있습니다~ 파와 무도<br>
+                                    싱싱하고 재료가 너무 괜찮네요!<br>
+                                    강추입니다!
+                                </div>
+                                <div class="review_star"></div>
+                                <div class="review_id font16">by.cjs****</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveiw_btn_wrap">
+                        <div class="review_prev_btn"></div>
+                        <div class="review_count">
+                            <span class="reveiw_start">1</span>
+                            <span>/</span>
+                            <span class="reveiw_fin">5</span>
+                        </div>
+                        <div class="review_next_btn"></div>
+                    </div>
+                </div>
+                <div class="section4_wrap_right">
+                    <div class="gradient_bg2"></div>
+                    <div class="review_slide_wrap">
+                        <div class="review_img review_img_5">
+                            <div class="review_img_wrap">
+                                <img src="img/section4/review_5big.jpeg" alt="버섯소불고기" class="review_img_big">
+                            </div>
+                        </div>
+                        <div class="review_img review_img_1">
+                            <div class="review_img_wrap">
+                                <img src="img/section4/review_1big.jpg" alt="평양식 어복쟁반" class="review_img_big">
+                            </div>
+                        </div>
+                        <div class="review_img review_img_2">
+                            <div class="review_img_wrap">
+                                <img src="img/section4/review_2big.jpg" alt="고추잡채와 꽃빵" class="review_img_big">
+                            </div>
+                        </div>
+                        <div class="review_img review_img_3">
+                            <div class="review_img_wrap">
+                                <img src="img/section4/review_3big.jpg" alt="감바스알아히요" class="review_img_big">
+                            </div>
+                        </div>
+                        <div class="review_img review_img_4">
+                            <div class="review_img_wrap">
+                                <img src="img/section4/review_4big.jpeg" alt="소고기맑은탕국" class="review_img_big">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveiw_subslide_wrap">
+                        <img src="img/section4/review_5.png" alt="버섯소불고기" class="review_img_png">
+                        <img src="img/section4/review_1.png" alt="평양식 어복쟁반" class="review_img_png left0animation">
+                        <img src="img/section4/review_2.png" alt="고추잡채와 꽃빵" class="review_img_png">
+                        <img src="img/section4/review_3.png" alt="감바스알아히요" class="review_img_png">
+                        <img src="img/section4/review_4.png" alt="소고기맑은탕국" class="review_img_png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="section5_wrap">
+                <div class="all_menu">
+                    <div class="section5_tit_img">
+                        <img src="img/all_menu.jpg" alt="쿡킷 메뉴보기">
+                    </div>
+                    <div class="section5_text">
+                        <div class="section5_title font36">
+                            쿡킷 메뉴보기<br>
+                            Premium Mealkit
+                        </div>
+                        <div class="section5_desc font15">
+                            장보기, 재료손질, 레시피검색 <b>번거로움 OUT!</b><br>
+                            초간편함은 물론, 완벽한 맛 쿡킷이 다~ 했네
+                        </div>
+                    </div>
+                    <div class="section5_allitem_wrap">
+                    </div>
+                </div>
+                <div class="hot_deal">
+                    <div class="section5_tit_img">
+                        <img src="img/hot_deal.jpg" alt="놓칠 수 없는 기회 오픈 한정 핫딜">
+                    </div>
+                    <div class="section5_text">
+                        <div class="section5_title font36">
+                            놓칠 수 없는 기회<br>
+                            오픈 한정 핫딜
+                        </div>
+                        <div class="section5_desc font15">
+                            파격적인 가격으로<br>
+                            쿡킷을 경험할 수 있는 기회를 잡으세요
+                        </div>
+                    </div>
+                    <div class="section5_hotdeal_wrap">
+                    </div>
+                    <div class="cj_cookit">
+                        <div class="cj_cookit_img">
+                            <img src="img/millkit.jpg" alt="프리미엄 밀키트 COOKIT을 소개합니다">
+                        </div>
+                        <div class="cj_cookit_text">
+                            <div class="cj_cookit_title font36">
+                                프리미엄 밀키트<br>
+                                COOKIT을 소개합니다.
+                            </div>
+                            <div class="cj_cookit_desc font20">
+                                COOKIT은 장보기, 재료손질, 계량 등 복잡한 과정 없이도<br>누구나 간편하게 특별한 집밥을 만들 수 있도록 도와드립니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_top">
+                <div class="footer_top_wrap">
+                    <div class="alert font20">
+                        공지사항
+                    </div>
+                    <div class="alert_content font20">
+                        미리보는 쿡킷 전체 메뉴 (9月)
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom_sub">
+                <div class="footer_bottom_sub_wrap">
+                    <ul class="footer_subul_1">
+                        <li class="font14 footer_subul_title">CJ그룹</li>
+                        <li class="font12">CJ주식회사</li>
+                    </ul>
+                    <ul class="footer_subul_2">
+                        <li class="font14 footer_subul_title">식품&식품서비스</li>
+                        <li class="font12">CJ 제일제당 (식품)</li>
+                        <li class="font12">CJ 푸드빌</li>
+                        <li class="font12">CJ 프레시웨이</li>
+                        <li class="font12">CJ 엠디원</li>
+                    </ul>
+                    <ul class="footer_subul_3">
+                        <li class="font14 footer_subul_title">생명공학</li>
+                        <li class="font12">CJ 제일제당 (바이오)</li>
+                    </ul>
+                    <ul class="footer_subul_4">
+                        <li class="font14 footer_subul_title">신유통</li>
+                        <li class="font12">CJ ENM (오쇼핑)</li>
+                        <li class="font12">CJ 대한통운</li>
+                        <li class="font12">CJ 텔레닉스</li>
+                        <li class="font12">CJ 올리브네트웍스 (올리브영)</li>
+                    </ul>
+                    <ul class="footer_subul_5">
+                        <li class="font14 footer_subul_title">엔터테인먼트&미디어</li>
+                        <li class="font12">CJ ENM (E&M)</li>
+                        <li class="font12">CJ CGV</li>
+                        <li class="font12">CJ 파워캐스트</li>
+                        <li class="font12">CJ Hello</li>
+                    </ul>
+                    <ul class="footer_subul_6">
+                        <li class="font14 footer_subul_title">인프라</li>
+                        <li class="font12">CJ 대한통운 (건설)</li>
+                        <li class="font12">CJ 올리브네트웍스 (IT사업)</li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="footer_bottom">     
+                <div class="footer_bottom_wrap">
+                    <div class="footer_bottom_left">
+                        <div class="footer_bottom_logo"></div>
+                        <div class="footer_bottom_copyright font12">© COOKIT ALL RIGHTS RESERVED</div>
+                    </div>
+                    <div class="footer_bottom_center">
+                        <ul class="footer_bottom_ul1">
+                            <li class="font13">이용약관</li>
+                            <li class="font13">개인정보처리 방침</li>
+                            <li class="font13">법적고지</li>
+                            <li class="font13">사업자정보 확인</li>
+                        </ul>
+                        <ul class="footer_bottom_ul2">
+                            <li class="font12">씨제이제일제당(주)</li>
+                            <li class="font12">대표자 : 신현재</li>
+                        </ul>
+                        <ul class="footer_bottom_ul3">
+                            <li class="font12">주소 : 서울 중구 동호로 330 CJ제일제당 센터 (우) 04560</li>
+                            <li class="font12">사업자등록번호 : 104-86-09535</li>
+                        </ul>
+                        <ul class="footer_bottom_ul4">
+                            <li class="font12">통신판매업신고 중구 제 07767호</li>
+                            <li class="font12">개인정보보호책임자 : 류화정</li>
+                        </ul>
+                    </div>
+                    <div class="footer_bottom_right">
+                        <div class="cj_group_show font13">CJ그룹계열사 바로가기</div>
+                        <div class="customer-call font17">고객행복센터 1688-1920</div>
+                        <div class="request font13">1:1문의</div>
+                    </div>
+                </div>                 
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

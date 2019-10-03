@@ -1,0 +1,25 @@
+@media screen and (min-width : 0) and (max-width : 1023px){
+    .section {width : 100%; padding : 0 20px; overflow : visible;}
+    .item_inform_item_left, .item_inform_item_right {width : 100%; float : none;}
+    .item_infrom_star_share {overflow : hidden;}
+    .item_inform_item_right {height : auto;}
+    .item_inform_img {height : auto;}
+    .recipt_share {margin : 20px 0;}
+    .recipt_share > div {font-size : 14px;}
+    .item_inform_recipt:before, .item_inform_share:before {top : -3px;}
+    .item_infrom_banner span, .item_infrom_cooktime, .item_infrom_people {font-size : 14px;}
+    .item_infrom_name, .item_infrom_home {font-size : 20px;}
+    .item_inform_lavel, .item_inform_content, .item_inform_content span {font-size : 14px;}
+    .item_infrom_people:after {top : 4px;}
+    .item_inform_lavel {width : 80px;}
+    .item_inform_content {width : auto;}
+    .item_infrom_deliver .item_inform_content {letter-spacing : -2px;}
+    .can_deliver {font-size : 14px; margin-left : 20px;}
+    .font {font-size : 14px;}
+    .item_inform_lastorder {font-size : 14px;}
+    .item_infrom_deliver_date, .datelist_li span {font-size : 14px;}
+    .date_item_date, .date_item_name, .date_item_price span {font-size : 14px;}
+    .date_item_name {margin-bottom : 5px;}
+    .item_infrom_totalacount span, .item_infrom_totalacount, .item_infrom_totalprice, .item_infrom_totalprice span {font-size : 18px; line-height : 42px;}
+    .item_infrom_cart {width : 100%;}
+}

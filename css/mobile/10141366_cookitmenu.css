@@ -1,0 +1,11 @@
+@media screen and (min-width : 1024px) and (max-width : 1366px){
+    #menu {min-width : 1024px;}
+    .menu_wrap {width : 884px;}
+    .tab_right_ul li {width : 80px;}
+    .all, .tab_right_ul .thema_wrap {margin : 0;}
+    .order_time {margin : 20px 0 40px;}
+    .item {width : calc((100% - (36px * 2)) / 3 - 0.01px);}
+    .item:nth-child(4n) {margin-right : 36px;}
+    .item:nth-child(3n) {margin-right : 0px;}
+    .price, .name {letter-spacing : -1px;}
+}

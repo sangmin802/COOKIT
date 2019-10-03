@@ -1,0 +1,90 @@
+body {
+    overflow-y : scroll;
+}
+.section_wrap {
+    max-width : 1920px;
+    min-width : 1260px;
+    margin : 0 auto;
+}
+.section1 {
+    width : 1180px;
+    margin : 0 auto;
+    padding-top : 72px;
+}
+.section1_title {
+    font-weight : bold;
+}
+.section1_subtitle_wrap {
+    margin-top : 24px;
+    margin-bottom : 8px;
+}
+.congrats, .ing {
+    color : #606060;
+    font-weight : bold;
+    padding-bottom : 8px;
+    cursor : pointer;
+}
+.section1_subtitle_wrap > span:nth-child(2) {
+    margin-left : 24px;
+}
+.section1_subtitle_focus {
+    color : black;
+    border-bottom : 3px solid black;
+}
+.section1_content_wrap {
+    margin-top : 52px;
+    overflow : hidden;
+}
+/* 뭔가 있을때 */
+.event_item {
+    width : 380px;
+    float : left;
+    margin-right : 20px;
+}
+.event_item:nth-child(3n){
+    margin-right : 0;
+}
+.event_item_img {
+    height : 232.22px;
+    cursor : pointer;
+}
+.event_item_img img {
+    display : block;
+    width : 100%;
+}
+.event_desc {
+    font-weight : bold;
+    margin-top : 16px;
+    margin-bottom : 12px;
+}
+.event_tag {
+    background : black;
+    color : white;
+}
+.event_date {
+    color : #606060;
+    margin-left : 10px;
+}
+.event_name {
+    font-weight : bold;
+}
+/* 암것도없을때 */
+.nothing_img {
+    width : 80px;
+    height : 80px;
+    background : url('../img/ico_group.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : 0 -100px;
+    margin : 0 auto;
+    margin-top : 80px;
+}
+.nothing_text {
+    font-weight : bold;
+    text-align : center;
+    margin-top : 30px;
+    letter-spacing : -2px;
+}
+.d_day {
+    background : #ee0700;
+    color : white;
+}

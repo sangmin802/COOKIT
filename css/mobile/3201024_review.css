@@ -1,0 +1,8 @@
+@media screen and (min-width : 0) and (max-width : 1023px){
+    .section_wrap {max-width : 1023px; min-width : 320px; padding : 0 20px;}
+    .review_title {font-size : 28px;}
+    .section1 {width : 100%;}
+    .review_name {font-size : 20px;}
+    .review_id, .review_opinion   {font-size : 14px;}
+    .reveiw_btn_wrap {width : 100%;}
+}

@@ -1,0 +1,30 @@
+@media screen and (min-width : 1024px) and (max-width : 1366px){
+    /* header, footer */
+    header {max-width : 1366px; min-width : 1024px;}
+    .header_top_wrap, .header_bottom_wrap {min-width : 1024px;}
+    .header_top, .header_bottom {max-width : 1366px; min-width : 1024px;}
+    .header_bottom_ul_1 li {padding : 0 16px;}
+
+    .footer_top, .footer_bottom, .footer_bottom_sub {min-width : 1024px;}
+    .footer_top_wrap, .footer_bottom_wrap, .footer_bottom_sub_wrap {width : 884px;}
+    .footer_bottom_left {width:160px;}
+    .footer_bottom_center {width:550px;}
+    .footer_bottom_right {width:174px; letter-spacing : -1px; }
+    .footer_bottom_sub_wrap > ul {margin-right : 15px;}
+    .font12 { font-size : 0.8rem; }
+    .font13 { font-size : 0.9rem; }
+    .font14 { font-size : 1rem; }
+    .font15 { font-size : 1.1rem; }
+    .font16 { font-size : 1.2rem; }
+    .font17 { font-size : 1.3rem; }
+    .font18 { font-size : 1.4rem; }
+    .font20 { font-size : 1.6rem; }
+    .font22 { font-size : 1.8rem; }
+    .font24 { font-size : 2rem; }
+    .font26 { font-size : 2.2rem; }
+    .font28 { font-size : 2.4rem; }
+    .font30 { font-size : 2.6rem; }
+    .font32 { font-size : 2.8rem; }
+    .font36 { font-size : 3.2rem; }
+    .font40 { font-size : 3.6rem; }
+}

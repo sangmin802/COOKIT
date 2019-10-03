@@ -1,0 +1,33 @@
+@media screen and (min-width : 0) and (max-width : 1023px){
+    #body {max-width : 1023px; min-width : 320px;}
+    #menu {min-width : 320px; padding : 0 20px;}
+    .menu_wrap {width : 100%;}
+    .menu_title {font-size : 28px;}
+    .tab_left > span {font-size : 20px;}
+    .tab_right_ul li, .tab_right_ul span, .tab_right_ul div {font-size : 14px;}
+    .tab_left, .tab_right {float : none;}
+    .tab_right {margin-top : 20px;}
+    .tab_right_ul {overflow : hidden; width : 100%; height : auto;}
+    .tab_right_ul li {width : calc((100% - (10px * 5)) / 6 - 0.01px);}
+    .tab_right_ul .all {margin-right : 0; text-align : center;}
+    .tab_right_ul li {margin-right : 10px;}
+    .tab_right_ul li:nth-child(6) {margin-right : 0;}
+    .thema_divide span {padding : 0;}
+    .thema_divide .all_span {padding-bottom : 5px;}
+    .deliver_5day {font-size : 20px;}
+    .order_time {font-size : 14px;}
+    .thema_divide .thema_divide_focus {padding : 10px;}
+    .sub_menu_li {font-size : 14px;}
+
+    .menu_item_box {margin-top : 24px;}
+    .sub_menu {margin-top : 24px;}
+    .item {width : calc((100% - 36px) / 2 - 0.01px); height : auto; min-height : 300px; margin-top : 20px;}
+    .item:nth-child(2n) {margin-right : 0;}
+    .new_tag, .deliver_tag {font-size : 14px;}
+    .people_time {font-size : 14px;}
+    .menu2_item_name {font-size : 18px; white-space : nowrap; overflow : hidden; text-overflow : ellipsis;}
+    .hotdeal_tag {font-size : 14px;}
+    .review {display : none;}
+    .item_wrap_page_number {margin-top : 80px;}
+     
+}

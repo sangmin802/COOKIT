@@ -1,0 +1,113 @@
+body {
+    overflow-y : scroll;
+}
+.section_wrap {
+    max-width : 1920px;
+    min-width : 1260px;
+    margin : 0 auto;
+}
+.section1 {
+    width : 1180px;
+    margin : 0 auto;
+    padding-top : 72px;
+}
+.review_title {
+    font-weight : bold;
+    padding-bottom : 36px;
+    border-bottom : 4px solid black;
+}
+.review_slide_wrap {
+    margin-top : 48px;
+    position : relative;
+    height : 600px;
+    overflow : hidden;
+}
+.bg {
+    position : absolute;
+    z-index : 1;
+    right : 0;
+    width : 16%;
+    height : 100%;
+    background : linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.8)100%);
+}
+.review {
+    position : absolute;
+    width : 520px;
+    cursor : pointer;
+}
+.review5 { left : -520px; }
+.review1 { left : 0; }
+.review2 { left : 520px; }
+.review3 { left : 1040px; }
+.review4 { left : 1560px; }
+.review_img {
+    height : 360px;
+}
+.review_img img {
+    display : block;
+    height : 100%;
+}
+.review_name {
+    margin-top : 15px;
+    font-weight : bold;
+}
+.review_custom_wrap {
+    margin-top : 8px;
+    overflow : hidden;
+}
+.review_custom_wrap > div {
+    float : left;
+}
+.review_star { 
+    position : relative;
+    height : 24px;
+    width : 126px;
+    background : url('../img/img_group.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -200px -416px;
+}
+.review_star:after {
+    content : '';
+    position : absolute;
+    width : 1px;
+    height : 14px;
+    background : #e0e0e0;
+    right : 0;
+    margin-right : -10px;
+    top : 5px;
+}
+.review_id {
+    margin-left : 20px;
+    color : #606060;
+    font-weight : bold;
+}
+.review_opinion {
+    margin-top : 32px;
+    font-weight : bold;
+    color : #606060;
+    letter-spacing : -2px;
+    line-height : 24px;
+}
+.reveiw_btn_wrap {
+    width : 1180px;
+    float : right;
+    height : 28px;
+}
+.reveiw_btn_wrap > div { float : left;}
+.review_prev_btn, .review_next_btn {
+    width : 24px;
+    height : 24px;
+    background : url('../img/ico_group.png') no-repeat;
+    background-size : 800px 800px;
+    cursor : pointer;
+}
+.review_fill_wrap { width : calc(100% - 72px - 0.01px); height : 6px; margin-top : 9px; border-radius : 5px; position : relative; }
+.review_fill {
+    position : absolute;
+    width : 20%;
+    height : 100%;
+    background : black; 
+    left : 0;
+}
+.review_prev_btn { background-position : -540px 0; margin-right : 12px; }
+.reveiw_btn_wrap > .review_next_btn { background-position : -564px 0; margin-left : 12px; float : right; }

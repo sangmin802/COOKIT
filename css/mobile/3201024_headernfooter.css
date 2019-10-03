@@ -1,0 +1,70 @@
+@media screen and (min-width : 0) and (max-width : 1023px){
+    #body {min-width : 320px; max-width : 1023px; position : relative; overflow-x : hidden; overflow-y : hidden;}
+    header {display : none;}
+    .header_mobile {display : block; position : absolute; z-index : 10; width : 100%; background : black;}
+    .header_mobile_normal {height : 56px; padding : 17px;}
+    .m_logo {float : left; width : 71.5px; height : 21.5px; background : url('../../img/mobile/m_white_logo.png') no-repeat; background-size : cover;}
+    .m_cartnhamberger {float : right;}
+    .m_cart, .m_hamburger {display : inline-block; width : 32px; height : 32px; background : url('../../img/mobile/ico_gnb.svg') no-repeat; background-size : 100px auto;}
+    .m_cart {margin-right : 15px; background-position : 0 -32px; position : relative;}
+    .m_cart .cart_number {right : 0; font-size : 1rem; text-align : center;}
+    .m_hamburger {background-position : -32px -32px;}
+    /* mobile header popup */
+    .header_mobile_popup {position : absolute; width : 100%; height : 1023px; top:0; background : #f7f7f7; left : 100%;}
+    .header_mobile_section1 {height : 133px; background : linear-gradient(-135deg, #94C533 0%, #C6DF37 100%); padding : 18px 28px 20px;}
+    .header_mobile_section2 {height : 115px; padding : 24px 28px 20px; border-bottom : 1px solid #e0e0e0; background : white;}
+    .header_mobile_section3 {padding : 16px 28px 53px; background : white;}
+    .header_mobile_section4 {background : #f7f7f7; padding : 22px 28px 20px;}
+    /* m_section1 */
+    .header_mobile_section1_top {overflow : hidden;}
+    .header_mobile_sectoin1_home_remove {overflow : hidden; float : right;}
+    .header_mobile_login {float : left;}
+    .header_mobile_section1_home, .header_mobile_section1_remove {overflow : hidden; float : left; width : 40px; height : 40px; background : url('../../img/mobile/ico_set01.svg') no-repeat; background-size : 400px auto;}
+    .header_mobile_section1_home {background-position : -52px -146px;}
+    .header_mobile_section1_remove {background-position : -92px -146px;}
+    .header_mobile_section1_bottom {margin-top : 40px;}
+    .header_mobile_section1_sub {overflow : hidden;}
+    .header_mobile_section1_sub > div {float : left; width : 33.3%; padding-left : 16px; position : relative;}
+    .header_mobile_order {text-align : center;}
+    .header_mobile_findmenu {text-align : right;}
+    .header_mobile_mycookit:before, .header_mobile_order:before, .header_mobile_findmenu:before {content : ''; position : absolute; width : 16px; height : 16px; background : url('../../img/mobile/ico_set01.svg') no-repeat; background-size : 400px auto; top : 3px;}
+    .header_mobile_mycookit:before {background-position : -32px -195px;  left : 0;}
+    .header_mobile_order:before {background-position : 0px -195px; left : 50%; margin-left : -45px;}
+    .header_mobile_findmenu:before {background-position : -100px -195px; right : 70px;}
+    /* m_section2 */
+    .header_mobile_section3_timer {padding : 12px 0 4px;}
+    /* m_section3 */
+    .header_mobile_section4_ul > li {padding : 12px 0 12px; font-weight : bold;}
+    /* m_section4 */
+    .header_mobile_section5_top {color : #606060;}
+    /* m_section5 */
+    .header_mobile_section5_bottom {color : #606060; padding-top : 32px; padding-left : 20px; position : relative; cursor : pointer;}
+    .header_mobile_section5_bottom:before {content : ''; position : absolute; width : 16px; height : 16px; background : url('../../img/mobile/ico_set01.svg') no-repeat; background-size : 400px auto; background-position : -48px -195px; left : 0;}
+    /* footer */
+    .footer_top {min-width : 320px; font-size : 13px; padding : 0 20px;}
+    .footer_top_wrap {width : 100%;}
+    .footer_top_wrap > div {font-size : 13px;}
+    .alert {width : auto; margin-right : 20px;}
+    .footer_bottom {min-width : 320px; padding : 0 20px; position : inherit;}
+    .footer_bottom_wrap {width : 100%;  height : auto; padding-bottom : 60px;}
+    .footer_bottom_wrap > div {float : inherit;}
+    .footer_bottom_left {display : none;}
+    .footer_bottom_center {width : auto;}
+    .footer_bottom_center ul li{font-size : 13px;}
+    .footer_bottom_ul1 li {padding : 0 5px;}
+    .footer_bottom_ul2, .footer_bottom_ul3, .footer_bottom_ul4 {font-size : 12px; letter-spacing : -2.5px;}
+    .footer_bottom_right {width : auto;}
+    .footer_bottom_center {width : auto;}
+    .cj_group_show {display : none;}
+    .customer-call {text-align : left;}
+    .request {float : left;}
+    .header_mobile_menu {width : 100%; height : 50px; position : fixed; bottom : 0; background : white; z-index : 99; padding : 0 20px; display : block;}
+    .header_mobile_menu > li {float : left; width : 20%;}
+    .m_list_wrap {width : 48px; height : 48px; margin : 0 auto; cursor : pointer; background : url('../../img/mobile/ico_set01.svg') no-repeat; background-size : 400px auto;}
+    .header_mobile_menu li:nth-child(1) .m_list_wrap {background-position : 0 -473px;}
+    .header_mobile_menu li:nth-child(2) .m_list_wrap {background-position : -48px -425px;}
+    .header_mobile_menu li:nth-child(3) .m_list_wrap {background-position : -96px -425px;}
+    .header_mobile_menu li:nth-child(4) .m_list_wrap {background-position : -144px -425px;}
+    .header_mobile_menu li:nth-child(5) .m_list_wrap {background-position : -192px -425px;}
+    .m_list_name {font-size : 10px; font-weight :bold; text-align : center;line-height : 80px;}
+}

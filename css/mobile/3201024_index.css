@@ -1,0 +1,101 @@
+@media screen and (max-width : 1023px){
+    .main_slide_wrap {max-width : 1023px; min-width : 320px; height : auto;}
+    .main_slide {height : auto;}
+    .video_btn, .video_btn_pause, .main_slide_video, .main_slide_video video {display : none;}
+    .pc_main_img {display : none;}
+    .main_slide_img {width : 100%; position : inherit;}
+    .mobile_main_img {display : block; width : 100%;}
+    .slide_text {left : 0; margin-left : 0; padding-left : 20px; position : absolute; bottom : 40px; top : inherit;}
+    .main_slide_link {display : none;}
+    .newdeliver, .slide_date, .slide_name, .people_cooktime, .slide_price {height: auto;}
+    .slide_new {font-size : 12px; width : 39px; height : 17px; line-height : 17px;}
+    .slide_date {font-size : 18px; line-height : 18px;}
+    .slide_name {font-size : 31px; margin-top : 10px;}
+    .people_cooktime {font-size : 14px;}
+    .slide_price {font-size : 31px;}
+    .button_pagination {margin-left : 0; left : 20px; bottom : 30px;}
+    /* nav */
+    nav {max-width : 1023px; min-width : 320px; padding : 0 20px; height : auto; margin : 40px 0;}
+    .nav_wrap {width : 100%;}
+    .nav_wrap > div {width : 100%; height : 89px; padding : 21px 0 21px 26px; margin : 0; float : inherit;}
+    .deliverdate {display : none;}
+    .add_text > p:nth-child(1) {font-size : 19px; letter-spacing : -2px;}
+    .add_text > p:nth-child(2) {font-size : 14px; letter-spacing : -2px; padding-bottom : 0;}
+    .add_text > p:nth-child(3) {display : none;}
+    .add_text:after {display : none;}
+    /* section1 */
+    .section1 {min-width : 320px; max-width : 1023px; padding : 0 20px;}
+    .section1_wrap {width : 100%; height : auto; padding-left : 0;}
+    .taste_recommend {width : 100%; height : auto; float : inherit;}
+    .taste_recommend:after {display : none;}
+    .taste {margin : 0 auto;}
+    .recommend_text, .login_recommend {text-align : center;}
+    .login_recommend {font-size : 16px; letter-spacing : -2px;}
+    .recommend_text {font-size : 28px;}
+    .taste_list li {font-size : 18px; line-height : 36px;}
+    .section1_slidenumber {text-align : center;}
+    .section1_slidenumber > div {display : inline-block; float : none;}
+    .taste_food {position : inherit; left : 0; min-width : 320px; width : 320px; margin : 0 auto;}
+    .taste_food_item {width : 100%; height : auto;}
+    .taste_food_item .img {width : 100%; height : auto; float : none;}
+    .text_table_cell {float : none; height : auto; margin : 0 auto;}
+    .gradient_bg0, .gradient_bg {display : none;}
+    .taste_food_item:nth-of-type(1) { left : -320px; }
+    .taste_food_item:nth-of-type(2) { left : 0; }
+    .taste_food_item:nth-of-type(3) { left : 320px; }
+    .taste_food_item:nth-of-type(4) { left : 640px; }
+    .taste_food_item:nth-of-type(5) { left : 960px; }
+    /* section2 */
+    .section2 {max-width : 1023px; min-width : 320px; padding : 0 20px;}
+    .section2_swiper {max-width : none; min-width : 300px; width : 300px; height : 360px; margin : 0 auto;}
+    .img_ab {width : 300px; height : 320px; margin : 0 auto; left : 0; margin-left : 0;}
+    .section2_slide .event_mobile {display : block; width : 100%; overflow :visible;}
+    .section2_slide .event_pc {display : none;}
+    .section2_btnbar_wrap {width : 100%;}
+    /* section3 */
+    .section3 {max-width : 1023px; min-width : 320px; margin : 40px auto; padding : 0 20px;}
+    .section3_wrap {width : 100%; height : auto;}
+    .best_item_wrap {height : auto; overflow : hidden;}
+    .best_item {width : calc((100% - 20px) / 2 - 0.01px); margin-right : 20px; margin-top : 30px; height : auto; min-height : 300px;}
+    .best_number {width : 24px; height : 24px; left : 10px; top : 10px; font-size : 14px; line-height : 24px;}
+    .best_item:nth-child(1) .best_number {width : 36px; height : 36px; left : 10px; top : 10px; font-size : 14px; line-height : 10px; padding : 0; padding-top : 8px;}
+    .best_number .best1 {font-size : 14px;}
+    .best_item_name, .best_item_pricepeople {letter-spacing : -2px;}
+    .best_item:nth-child(3n) {margin-right : 20px;}
+    .best_item:nth-child(2n) {margin-right : 0px;}
+    .best_item:hover {box-shadow : none;}
+    /* section4 */
+    .section4 {max-width : 1023px; min-width : 320px; padding : 0 20px; height : auto; margin-bottom : 40px; height : auto; overflow : visible;}
+    .section4_wrap {width : 100%; height : auto;}
+    .section4_wrap:after {display : none;}
+    .section4_title {float : none; text-align : center;}
+    .section4_wrap_left {width : 100%; float : none; text-align : center; overflow : visible;}
+    .live_review_wrap {margin-top : 0;}
+    .ddaom {margin : 0 auto;}
+    .live_review_innerwrap {margin : 0 auto; margin-top : 20px;}
+    .review_star {margin : 0 auto;}
+    .reveiw_btn_wrap > div {display : inline-block; float : none;}
+    .reveiw_btn_wrap {text-align : center;}
+    .section4_wrap_right {min-width : 320px; width : 320px; position : inherit; margin : 0 auto; left : 0;}
+    .review_img {width : 100%;}
+    .review_img_5 { left : -320px; }
+    .review_img_1 { left : 0px; }
+    .review_img_2 { left : 320px; }
+    .review_img_3 { left : 640px; }
+    .review_img_4 { left : 960px; }
+    .reveiw_subslide_wrap {width : 160px; height : 160px; left : 200px; top : 140px;}
+    /* section5 */
+    .section5 {max-width : 1023px; min-width : 320px; padding : 0 20px;}
+    .section5_wrap {width : 100%;}
+    .all_menu, .hot_deal {width : 100%; float : none;}
+    .hot_deal {margin-top : 40px;}
+    .section5_item {height : 88px;}
+    .section5_item_img {width : 88px; height : 88px;}
+    .section5_banner { margin-bottom : 6px; }
+    .section5_item_pricepeople { margin-top : 6px; }
+    .section5_item_name, .section5_item_price {font-size : 13px;}
+    .section5_tit_img {height : auto;}
+    .section5_title, .section5_desc, .cj_cookit_title, .cj_cookit_desc {text-align : center;}
+    .cj_cookit_img {height : auto;}
+    .new_tag, .section5_item_people, .deliver_tag {font-size : 13px;}
+}

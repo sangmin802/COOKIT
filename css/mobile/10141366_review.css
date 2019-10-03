@@ -1,0 +1,4 @@
+@media screen and (min-width : 1024px) and (max-width : 1366px){
+    .section_wrap {max-width : 1366px; min-width : 1024px;}
+    .section1, .reveiw_btn_wrap {width : 884px;}
+}

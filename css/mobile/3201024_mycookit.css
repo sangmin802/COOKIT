@@ -1,0 +1,14 @@
+@media screen and (min-width : 0) and (max-width : 1023px){
+    .section_wrap {max-width : 1023px; min-width : 320px; padding : 0 20px;}
+    .section1 {width : 100%;}
+    .login {font-size : 28px;}
+    .login_way_wrap > span {font-size : 20px;}
+    .login_wrap {width : 100%;}
+    .find_save div, .find_save span {font-size : 14px; line-height : 30px;}
+    
+    .find_save .login_btn {font-size : 20px; line-height : 56px;}
+    .other_potal_login > span {margin : 0 10px;}
+    .cj_member_check {margin-top : 20px; font-size : 14px;}
+    .cj_member_check b {font-size : 14px;}
+    .member_ing {width : 100%; font-size : 14px;}
+}

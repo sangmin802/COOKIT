@@ -1,0 +1,6 @@
+@media screen and (min-width : 1024px) and (max-width : 1366px){
+    .section {width : 884px; overflow : visible;}
+    .item_inform_item_left, .item_inform_item_right {width : 100%; float : inherit;}
+    .item_inform_img {height : auto;}
+    .item_inform_content {width : 500px;}
+}

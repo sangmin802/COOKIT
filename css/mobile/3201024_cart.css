@@ -1,0 +1,27 @@
+@media screen and (min-width : 0) and (max-width : 1023px){
+    .cart_inform {width : 100%; margin-top : 100px; padding : 0 20px;}
+    .cart_1 {height : auto;}
+    .cart_title {float : none; font-size : 28px;}
+    .cart_step {float : none; margin-top : 30px;}
+    .cart_step > div {font-size : 14px; text-align : center;}
+
+    .cart_date_item {padding : 0 10px;}
+    .cart_2_text {font-size : 14px; line-height : 24px; float : none;}
+    .cart_login {font-size : 14px; width : 100%; float : none; margin-top : 30px;}
+    .cart_date_item_desc {margin-left : 0;}
+    .cart_date_item_totalprice {margin-left : 10px;}
+    .cart_date_item .cart_date_item_remove {float : right;}
+
+    .cart_3_btn span {font-size : 14px;}
+    .cart_date_top span, .cart_date_top {font-size : 14px;}
+    .buy_more_freedeliver {font-size : 14px;}
+
+    .cart_3_final {text-align : center;}
+    .cart_3_final div, .cart_3_final span {font-size : 18px;}
+    .cart_3_final div {float : none;}
+    .cart_3_final_1, .cart_3_final_2, .cart_3_final_3, .cart_3_final_4 {width : auto; height : auto; margin-bottom : 20px;}
+    .cart_3_final_4 {margin-bottom : 0;}
+    .cart_3_final_math {display : none;}
+
+    .order_btn_wrap div {font-size : 14px; width : 100%; float : none;margin-bottom : 20px;}
+}

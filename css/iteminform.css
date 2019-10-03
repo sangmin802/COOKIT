@@ -1,0 +1,417 @@
+body {
+    overflow-y : scroll;
+}
+.section {
+    width : 1180px;
+    min-height : 776px;
+    overflow : hidden;
+    margin : 0 auto;
+    margin-top : 72px;
+}
+.item_inform_item_left {
+    width : 600px;
+    float : left;
+}
+.item_inform_item_right {
+    width : 500px;
+    float : right;
+}
+.item_inform_img {
+    width : 100%;
+    height : 600px;
+}
+.item_inform_img img {
+    display : block;
+    width : 100%;
+    height : 100%;
+}
+.item_infrom_star_share {
+    margin-top : 24px;
+}
+.item_inform_star {
+    width : 135px;
+    height : 30px;
+    float : left;
+}
+.star_bg {
+    display : inline-block;
+    width : 88px;
+    height : 16px;
+    background : url('../img/menu1/ico_set.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -374px -26px;
+}
+.blank_star {
+    position : relative;
+}
+.fill_star {
+    position : absolute;
+    top : 0;
+    left : 0;
+    background-position : -374px 0;
+}
+.star_score {
+    font-weight : bold;
+}
+.recipt_share {
+    float : right;
+}
+.recipt_share > div {
+    position : relative;
+    float : left;
+    margin-left : 50px;
+    color : #606060;
+    font-weight : bold;
+    cursor : pointer;
+}
+.recipt_share > div:nth-child(1){
+    margin-left : 0;
+}
+.item_inform_recipt:before {
+    content : '';
+    position : absolute;
+    width : 30px;
+    height : 30px;
+    background : url('../img/menu2/ico_set2.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -416px -80px;
+    left : -30px;
+}
+.item_inform_share:before {
+    content : '';
+    position : absolute;
+    width : 30px;
+    height : 30px;
+    background : url('../img/menu2/ico_set2.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -454px -80px;
+    left : -30px;
+}
+/* right */
+.item_inform_lavel {
+    width : 140px;
+    float : left;
+}
+.item_inform_content {
+    width : 360px;
+    float : left;
+    letter-spacing : -1px;
+}
+.item_infrom_banner {
+    height : 40px;
+}
+.item_infrom_banner > span {
+    margin-right : 10px;
+}
+.item_infrom_name {
+    font-weight : bold;
+}
+.item_infrom_people_cooktime {
+    margin-top : 24px;
+    padding-bottom : 8px;
+    border-bottom : 1px solid #e0e0e0;
+}
+.item_infrom_people {
+    position : relative;
+    margin-right : 20px;
+    float : left;
+}
+.item_infrom_people:after {
+    content : '';
+    position : absolute;
+    width : 1px; 
+    height : 14px;
+    background : #e0e0e0;
+    top : 8px;
+    right : 0;
+    margin-right : -10px;
+}
+.item_infrom_price {
+    padding : 10px 0;
+    border-bottom : 1px solid #e0e0e0;
+    overflow : hidden;
+}
+.item_infrom_price > div {
+    font-weight : bold;
+    height : 38px;
+    line-height : 38px;
+}
+.item_infrom_price del {
+    text-decoration : line-through;
+    color : #606060;
+    margin-left : 10px;
+}
+.item_infrom_point {
+    padding : 8px 0;
+    border-bottom : 1px solid #e0e0e0;
+    overflow : hidden;
+}
+.item_infrom_point .item_inform_lavel {
+    color : #606060;
+}
+.item_infrom_point .item_inform_content {
+    font-weight : 500px;
+}
+.item_infrom_point .item_inform_content > span {
+    position : relative;
+    font-weight : bold;
+    margin-left : 5px;
+}
+.item_infrom_point .item_inform_content > span:after {
+    content : '';
+    position : absolute;
+    width : 20px;
+    height : 20px;
+    background : url('../img/menu2/ico_set.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -330px -74px;
+    cursor : pointer;
+    top : 50%;
+    margin-top : -10px;
+}
+.item_infrom_deliver {
+    padding-top : 8px;
+    padding-bottom : 32px;
+    border-bottom : 1px solid black;
+    overflow : hidden;
+}
+.item_infrom_deliver .item_inform_lavel, .item_infrom_deliver .item_inform_content {
+    color : #606060;
+    font-weight : bold;
+}
+.dawn_deliver {
+    position : relative;
+    margin-right : 25px;
+}
+.dawn_deliver:after {
+    content : '';
+    position : absolute;
+    width : 20px;
+    height : 20px;
+    background : url('../img/menu2/ico_set.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -330px -74px;
+    cursor : pointer;
+    top : 50%;
+    margin-top : -10px;    
+}
+.can_deliver {
+    position : relative;
+    margin-left : 25px;
+    text-decoration : underline;
+    cursor : pointer;   
+}
+.can_deliver:before {
+    content : '';
+    position : absolute;
+    width : 20px;
+    height : 20px;
+    background : url('../img/menu2/ico_set2.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : 0 0; 
+    top : 50%;
+    margin-top : -10px;
+    left : 0;
+    margin-left : -20px;
+}
+.item_inform_deliver_price {
+    overflow : hidden;
+}
+.item_inform_deliver_way {
+    overflow : hidden;
+}
+.item_inform_deliver_price .item_inform_content {
+    color : black;
+}
+.up4_freedeliver {
+    color : #606060;
+    margin-left : 10px;
+}
+.item_inform_lastorder {
+    position : relative;
+    margin-top : 24px;
+    text-align : right;
+    padding-right : 20px;
+}
+.item_inform_lastorder:after {
+    content : '';
+    position : absolute;
+    width : 20px;
+    height : 20px;
+    background : url('../img/menu2/ico_set.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -330px -74px;
+    cursor : pointer;
+    top : 50%;
+    margin-top : -10px;    
+}
+.item_infrom_deliver_date_wrap {
+    position : relative;
+}
+.item_infrom_deliver_date {
+    border : 1px solid #ccc;
+    padding : 0 56px 0 16px;
+    height : 46px;
+    line-height : 46px;
+    color : #606060;
+    font-weight : bold;
+    cursor : pointer;
+    margin-top : 24px;
+    margin-bottom : 48px;
+}
+.border_bottom_none {
+    border : 1px solid black;
+    border-bottom : 1px solid #ccc;
+}
+.item_infrom_deliver_datelist {
+    position : absolute;
+    display : block;
+    width : 100%;
+    top : 46px;
+    border : 1px solid black;
+    border-top : 0;
+    display : none;
+    z-index : 1;
+}
+.datelist_li {
+    padding-left : 10px;
+    color : black;
+    background : white;
+    line-height : 48px;
+    font-weight : bold;
+}
+.canbuy_class {
+    cursor : pointer;
+}
+.already_chosen {
+    color : #606060;
+    background : #eaeaea;
+}
+.soldout_class {
+    color : #606060;
+    background : #eaeaea;
+    position : relative;
+}
+.soldout_class:before {
+    content : '일시품절';
+    position : absolute;
+    width : 100px;
+    height : 48px;
+    color : #606060;
+    right : 0;
+    margin-right : 40px;
+}
+.soldout_class:after {
+    content : '';
+    position : absolute;
+    width : 24px;
+    height : 24px;
+    background : url('../img/menu2/ico_set.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -346px 0;
+    right : 0;
+    top : 0;
+    margin-top : 14px;
+    margin-right : 20px;
+}
+.datelist_li:hover {
+    background : #eaeaea;
+}
+.item_infrom_deliver_date:after {
+    content : '';
+    position : absolute;
+    width : 15px;
+    height : 15px;
+    border-bottom : 1px solid #606060;
+    border-right : 1px solid #606060;
+    transform : rotate(45deg);
+    right : 0;
+    top : 0;
+    margin-top : 8px;
+    margin-right : 15px;
+}
+.item_infrom_total_price {
+    margin-bottom : 18px;
+    overflow : hidden;
+}
+.item_infrom_totalacount {
+    float : left;
+    line-height : 42px;
+    font-weight : bolder;
+}
+.item_infrom_totalprice {
+    float : right;
+    font-weight : bolder;
+}
+.item_infrom_cart {
+    width : 426px;
+    height : 64px;
+    float : right;
+    background : #bdd61a;
+    font-weight : bolder;
+    text-align : center;
+    line-height : 64px;
+    letter-spacing : -1px;
+    cursor : pointer;
+}
+.date_item {
+    border : 1px solid #e0e0e0;
+    margin-bottom : 20px;
+}
+.date_item_date {
+    position : relative;
+    padding : 12px 24px 12px 21px;
+    font-weight : bold;
+    border-bottom : 1px solid #e0e0e0;
+}
+.close {
+    position : absolute;
+    width : 30px;
+    height : 30px;
+    background : url('../img/menu2/ico_set.png') no-repeat;
+    background-size : 800px 800px;
+    background-position : -316px 0;
+    cursor : pointer;
+    right : 0;
+    top : 0;
+    margin-top : 16px;
+    right : 12px;
+}
+.date_item_desc {
+    overflow : hidden;
+    padding : 14px 20px 20px;
+}
+.date_item_desc > div {
+    float : left;
+}
+.date_item_name {
+    width : 210px;
+    font-weight : bold;
+}
+.date_item_count_box {
+    width : 104px;
+    box-sizing : content-box;
+    border : 1px solid #e0e0e0;
+}
+.date_item_count_box span {
+    text-align : center;
+    line-height : 27px;
+}
+.date_item_minus, .date_item_plus {
+    display : inline-block;
+    width : 32px;
+    height : 27px;
+    cursor : pointer;
+}
+.date_item_count {
+    display : inline-block;
+    width : 40px;
+    height : 27px;
+    border-left : 1px solid #e0e0e0;
+    border-right : 1px solid #e0e0e0;
+    font-weight : bold;
+}
+.date_item_desc > .date_item_price {
+    float : right;
+    font-weight : bold;
+}
