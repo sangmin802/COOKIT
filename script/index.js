@@ -339,7 +339,6 @@ $(document).ready(function(){
         // 시간으로 나누고남은 나머지를 분으로 나눈것이 남은 분
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
-        
         $('.arrive').html(deliver_date.getMonth()+1+'월 '+(deliver_date.getDate()+1)+'일('+yoil((deliver_date.getDay()+1))+')에 받을 수 있어요');
         $('.etc_time').html(hours+' : '+zero(minutes)+' : '+zero(seconds));
     }

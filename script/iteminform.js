@@ -19,7 +19,6 @@ $(document).ready(function(){
             check_cart.push(Storage[s].split(':')[0]);
         }
     }
-    console.log(check_cart)
     $.ajax({
         url : 'https://raw.githubusercontent.com/sangmin802/COOKIT/master/json/items.json',
         method : 'GET',
@@ -27,7 +26,7 @@ $(document).ready(function(){
     }).done(function(data){
         var item_id = find_id();
         pdt = data;
-
+        console.log(pdt)
         for(var i in pdt){
             if(pdt[i].id==item_id){
                 item = pdt[i];
